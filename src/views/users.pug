@@ -1,0 +1,10 @@
+extends layouts/main.layout.pug
+
+block content
+  h2.mb-2 User list
+  if users
+    ul.list-reset
+      each user in users
+        li.w-64.p-2.mb-2.border.border-solid.rounded.border-grey.shadow.text-grey-darker= user
+  else
+    p There are no users

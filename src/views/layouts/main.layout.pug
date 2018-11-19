@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title= title
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css")
+  body
+    header
+      nav.flex.items-center.justify-between.flex-wrap.bg-teal.p-6
+        ul.list-reset.flex
+          li.mr-6
+            a(href="/", class="inline-block mt-0 text-white hover:text-teal-lighter mr-4 no-underline") Home
+          li
+            a(href="/users", class="inline-block mt-0 text-white hover:text-teal-lighter mr-4 no-underline") User list
+    main.p-4
+      block content

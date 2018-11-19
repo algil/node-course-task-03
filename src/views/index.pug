@@ -1,0 +1,8 @@
+extends layouts/main.layout.pug
+
+block content
+  h2 Task 03
+  form.w-full.max-w-xs(action="/users" method="POST")
+    .flex.items-center.border-b.border-b-2.border-teal.py-2
+      input#user(name="user", class="appearance-none bg-transparent border-none w-full text-grey-darker mr-3 py-1 px-2 leading-tight focus:outline-none", placeholder="Type a name")
+      button(class="flex-no-shrink bg-teal hover:bg-teal-dark border-teal hover:border-teal-dark text-sm border-4 text-white py-1 px-2 rounded") Add User
